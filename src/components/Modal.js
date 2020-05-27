@@ -4,6 +4,8 @@ import './Modal.css'
 class Modal extends Component {
   render() {
     return (
+      <div className = "ModalM">
+      <span class="close">&times;</span>
       <div className="Modal">
         <h1>This is a modal 1</h1>
         <p>
@@ -19,6 +21,7 @@ class Modal extends Component {
           <button>Accept</button>
           <button>Decline</button>
         </div>
+      </div>
       </div>
     );
   }
