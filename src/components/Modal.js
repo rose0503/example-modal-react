@@ -1,28 +1,26 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-class App extends Component {
+class Modal extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            <button>Open modal</button>
-          </p>
-          <a
-            className="App-link"
-            href="https://coders-x.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Yêu anh Thịnh
-          </a>
-        </header>      
+      <div className="Modal">
+        <h1>This is a modal 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. 
+        </p>
+        <div className="groupButton">
+          <button>Accept</button>
+          <button>Decline</button>
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default Modal;
