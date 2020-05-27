@@ -1,6 +1,47 @@
-.Modal { 
-      display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    flex-direction: column;
+.Modal {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  margin: 35px;
+}
+
+.Modal h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  font-feature-settings: "tnum" on, "lnum" on;
+}
+
+.Modal p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  color: #373737;
+}
+
+.groupButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Modal button:nth-child(1) {
+  background: #28A745;
+  width: 134px;
+  height: 48px;
+  margin-left: 10px;
+}
+
+.Modal button:nth-child(2) {
+  background: #D63447;
+  width: 134px;
+  height: 48px;
 }
