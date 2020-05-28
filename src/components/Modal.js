@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 import './Modal.css'
+import classNames from 'classnames'
+
 
 class Modal extends Component {
+  
   render() {
-    return (
-      <div className = "ModalM">
-      <span class="close">&times;</span>
+    let {isDisplay, onHide} = this.props;
+    // if(!isDisplay){
+    //   return null;
+    // }
+    console.log("props", isDisplay)
+    return ( 
+      <div className = {classNames("myModal",{ isModal: isDisplay=== true})}>
+      <span className="close" onClick={onHide}>&times;</span>
       <div className="Modal">
         <h1>This is a modal 1</h1>
         <p>
@@ -18,8 +26,8 @@ class Modal extends Component {
           culpa qui officia deserunt mollit anim id est laborum. 
         </p>
         <div className="groupButton">
-          <button>Accept</button>
-          <button>Decline</button>
+          <button onClick={onHide}>Accept</button>
+          <button onClick={onHide}>Decline</button>
         </div>
       </div>
       </div>

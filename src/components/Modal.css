@@ -1,8 +1,10 @@
-.ModalM {
-  width: 846px;
-  height: 529px;
+.myModal {
+  width: auto;
+  height: fit-content;
   background: #FFFFFF;
   border-radius: 6px;
+  display: none;
+  margin: 0 20%;
 }
 
 .close {
@@ -11,6 +13,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .Modal {
@@ -22,6 +25,7 @@
 }
 
 .Modal h1 {
+  color: black;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -63,4 +67,8 @@
   height: 40px;
   border: none;
   cursor: pointer;
+}
+
+.isModal{
+  display: inline-block !important;
 }
